@@ -20,7 +20,7 @@
 - (BOOL)tableView:(ExpandableTableView *)tableView canRemoveSection:(NSUInteger)section;
 
 //- (CGFloat)tableView:(ExpandableTableView *)tableView heightForSection:(NSUInteger)section;
-//- (CGFloat)tableView:(ExpandableTableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (CGFloat)tableView:(ExpandableTableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 - (NSInteger)tableView:(ExpandableTableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath;
 - (void)tableView:(ExpandableTableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
 - (void)tableView:(ExpandableTableView *)tableView willDisplayCell:(UITableViewCell *)cell forSection:(NSUInteger)section;

@@ -502,6 +502,13 @@
 	return sourceIndexPath;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([_expandableDelegate respondsToSelector:@selector(tableView:heightForRowAtIndexPath:)]) {
+        return [_expandableDelegate tableView:self heightForRowAtIndexPath:indexPath];
+    }
+    return 0;
+}
+
 #pragma mark -
 #pragma mark Private insert/update methods
 
